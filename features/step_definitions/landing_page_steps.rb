@@ -16,12 +16,12 @@ Given("I visit the {string} page") do |string|
     visit root_path
   end
   
-  When("I click {string} link") do |string|
-    expect(page).to have_content string
+  When("I click {string} link") do |article_link|
+    click_link(article_link)
   end
   
-  When("I fill in {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+  When("I fill in {string} with {string}") do |field, content|
+    fill_in field, with: content
   end
   
   When("I click {string} button") do |string|

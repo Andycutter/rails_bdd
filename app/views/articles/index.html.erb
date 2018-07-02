@@ -1,3 +1,6 @@
 <h1>Articles</h1>
-<h2>A breaking news item</h2>
-<p>Some really breaking action</p>
+
+<% @articles.each do |article| %>
+    <p><%= article.title %></p>
+    <p><%= article.content %></p>
+<% end %>

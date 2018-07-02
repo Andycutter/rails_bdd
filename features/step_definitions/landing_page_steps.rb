@@ -24,8 +24,8 @@ Given("I visit the {string} page") do |string|
     fill_in field, with: content
   end
   
-  When("I click {string} button") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  When("I click {string} button") do |submit|
+    click_button('Save Article')
   end
   
   Then("I should be on {string} page") do |string|

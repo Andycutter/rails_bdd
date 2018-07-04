@@ -26,6 +26,7 @@ Given("I visit the {string} page") do |string|
   
   When("I click {string} button") do |submit|
     click_button('Save Article')
+    # I just want to test if I click the button, but I get error for 'No route matches'. But that is next text no?
   end
   
   Then("I should be on {string} page") do |string|

@@ -29,9 +29,11 @@ Given("I visit the {string} page") do |string|
   end
   
   Then("I should be on {string} page") do |string|
-    visit create_path
+    visit create_article_path
+    #I want to check if I go to the new create page with the new article
   end
 
-  Then("I should not see {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+  Then("I should not see {string} with {string}") do |new_title, new_content|
+    expect(page).to have_content new_title, new_content
+    #I want to see if the title and content I added in the form is displayed on the new article site
   end

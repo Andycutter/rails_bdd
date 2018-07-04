@@ -25,12 +25,11 @@ Given("I visit the {string} page") do |string|
   end
   
   When("I click {string} button") do |submit|
-    click_button('Save Article')
-    # I just want to test if I click the button, but I get error for 'No route matches'. But that is next text no?
+    click_button('Create Article')
   end
   
   Then("I should be on {string} page") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    visit create_path
   end
 
   Then("I should not see {string} with {string}") do |string, string2|

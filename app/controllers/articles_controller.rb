@@ -13,6 +13,7 @@ class ArticlesController < ApplicationController
       redirect_to root_path, notice: 'Article was successfully created.'
     else
       flash[:error] = 'Your article could not be saved'
+      render :new
     end
 
   end

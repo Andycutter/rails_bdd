@@ -20,7 +20,7 @@ Feature: Create articles
         And I click "Create Article" button
         Then I should see "Your article could not be saved"
 
-#   Scenario: Publisher doesn't enter content for article [Sad Path]
-#        When I fill in "Title" with "Learning Rails 5"
-#        And I click "Create Article" button
-#        Then I should see "Content can't be blank"
+    Scenario: Publisher doesn't enter content for article [Sad Path]
+        When I fill in "Title" with "Learning Rails 5"
+        And I click "Create Article" button
+        Then I should see "Your article could not be saved"

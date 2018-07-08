@@ -7,3 +7,13 @@
   <strong>Text:</strong>
   <%= @article.content %>
 </p>
+
+<%= form_with url: article_comments_path(@article), local: true do |form| %>
+      <%= form.label :email %>
+      <%= form.text_field :email %>
+      <br \>
+      <%= form.label :comment %>
+      <%= form.text_area :comment %>
+      <br \>
+      <%= form.submit %>
+<% end %>

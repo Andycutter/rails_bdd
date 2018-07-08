@@ -12,9 +12,10 @@ Feature: Visitor can add comment to articles
     Scenario: Visitor can add a comment to an article
         When I visit the site
         And I click on 'Learn Rails 5'
-        And I fill in the 'Comments' field with 'my comment'
+        And I fill in the 'comment' field with 'my comment'
         And I fill in 'Email' with 'email@test.se'
-        And I click on 'Create comment'
+        Then show me the page
+        And I click on 'Save'
         Then I should be on the 'Learn Rails 5' page
         Then I should see 'Your comment was added'
         And I should see 'my comment'

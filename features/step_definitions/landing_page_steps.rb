@@ -1,4 +1,4 @@
-Then ('Show me the page') do
+Then ('show me the page') do
   save_and_open_page
 end
 
@@ -33,8 +33,7 @@ When("I click {string} button") do |submit|
 end
 
 Then("I should be on {string} page") do |string|
-  visit create_article_path
-  #I want to check if I go to the new create page with the new article
+  visit root_path
 end
 
 Then("I should not see {string} with {string}") do |new_title, new_content|

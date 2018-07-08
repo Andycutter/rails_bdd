@@ -8,13 +8,18 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    @article = Article.new(article_params)
-    @article.save
+    @article = Article.create(article_params)
+    if @article.persisted?
+      redirect_to root_path, notice: 'Article was successfully created.'
+    else
+      flash[:error] = 'Your article could not be saved'
+    end
+
   end
 
   private
 
   def article_params
-    article = params.require(:article).permit(:title, :content)
+    params.require(:article).permit(:title, :content)
   end
 end

@@ -17,3 +17,11 @@
       <br \>
       <%= form.submit %>
 <% end %>
+
+<% if @article.comments.any? %>
+  <% @article.comments.each do |comment| %>
+    <p>
+      <%= comment.content %>
+    </p>
+  <% end %>
+<% end %>

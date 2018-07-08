@@ -21,6 +21,9 @@
 <% if @article.comments.any? %>
   <% @article.comments.each do |comment| %>
     <p>
+      <%= "Commented by: #{comment.email}" %>
+    </p>
+    <p>
       <%= comment.content %>
     </p>
   <% end %>

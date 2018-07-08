@@ -18,4 +18,5 @@ Feature: Visitor can add comment to articles
         Then I should be on the 'Learn Rails 5' page
         Then I should see 'Your comment was added'
         And I should see 'my comment'
+        And I should see 'email@test.se'
 

@@ -14,7 +14,6 @@ Feature: Visitor can add comment to articles
         And I click on 'Learn Rails 5'
         And I fill in the 'comment' field with 'my comment'
         And I fill in 'Email' with 'email@test.se'
-        Then show me the page
         And I click on 'Save' button
         Then I should be on the 'Learn Rails 5' page
         Then I should see 'Your comment was added'

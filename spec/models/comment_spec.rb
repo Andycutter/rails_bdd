@@ -16,6 +16,10 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to validate_presence_of :content }
   end
 
+  describe 'Email validation' do
+    it { is_expected.to validate_format_of :email }
+  end
+
   describe 'Factory' do
     let(:article) { FactoryBot.create(:article)}
     it 'should have valid Factory' do

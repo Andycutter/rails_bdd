@@ -38,5 +38,4 @@ end
 
 Then("I should not see {string} with {string}") do |new_title, new_content|
   expect(page).to have_content new_title, new_content
-  #I want to see if the title and content I added in the form is displayed on the new article site
 end

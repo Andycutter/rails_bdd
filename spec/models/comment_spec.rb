@@ -11,4 +11,12 @@ RSpec.describe Comment, type: :model do
   describe 'Associations' do
     it { is_expected.to belong_to :article }
   end
+
+  describe 'Factory' do
+    let(:article) { FactoryBot.create(:article)}
+    it 'should have valid Factory' do
+      expect(FactoryBot.create(:comment, article: article)).to be_valid
+    end
+  end
 end
+

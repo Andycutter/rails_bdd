@@ -1,7 +1,7 @@
 https://github.com/Andycutter/rails_bdd
 
 **OBS**
-The validation of Email format is working on the site, as in a comment is now saved if the email is not like email@email.se. But the rspec test does not let it pass.
+The validation of Email format is working on the site, as in a comment is NOT saved if the email does not look like email@email.se. But the rspec test does not let it pass.
 
 # README
 

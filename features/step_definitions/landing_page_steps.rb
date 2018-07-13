@@ -29,6 +29,7 @@ When("I fill in {string} with {string}") do |field, content|
 end
 
 When("I click {string} button") do |submit|
+  binding.pry
   click_button('Create Article')
 end
 

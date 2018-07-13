@@ -5,5 +5,6 @@
 <% @articles.each do |article| %>
     <%= link_to article.title, article_path(article) %>
     <p><%= article.content %></p>
+    <p><%= "Written by #{article.author} at #{article.created_at}" %></p>
 <% end %>
 

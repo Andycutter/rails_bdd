@@ -26,6 +26,9 @@ Click on **New Article** to create a new article. You are required to fill in a 
 To go and leave a comment for the article, press the headline which will take you to a page with the article and a form to leave a comment. You are required to give a **valid email**, write your comment in the **Comment field** and press the **Save** button. The article page will update and your comment will be displayed under the article and comment form.
 In this first release you have to manually go to `http://localhost:3000/` to return the front page.
 
+### 3. Dependencies
+For 
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
